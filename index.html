@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>BBC</title>
+
+        <style type="text/css">
+
+            body {
+
+                margin:0;
+                padding:0;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            #first-section {
+
+                background-color:#FFFFFF;
+                height:40px;
+                border-bottom:1px #CCCCCC solid;
+            }
+
+            .clear {
+
+                clear:both;
+            }
+
+            .container {
+                width:983px;
+                margin:0 auto;
+                height:100%;
+                /* background-color: red; */
+            }
+
+            #bbc-logo {
+
+                width:92px;
+                padding-top:5px;
+                margin-right:5px;
+                float:left;
+            }
+
+            #signin {
+
+                float:left;
+
+                
+            }
+
+            .format-link {
+
+                text-decoration:none;
+                color:#333333;
+                font-size:14px;
+                font-weight:bold;
+                
+            }
+
+            #login-logo {
+
+                margin-top:7px;
+
+            }
+
+            #signin {
+
+                padding-left:15px;
+                height:100%;
+
+            }
+
+            #signin:hover {
+
+                border-bottom:4px #1188BB solid;
+                height:92%;
+                cursor:pointer;
+            }
+
+            #signin-text {
+
+                position:relative;
+                top:-10px;
+                margin-left:10px;
+                padding-right:60px;
+
+            }
+
+            .left-border {
+
+                border-left:1px #B2B2B2 solid;
+            }
+
+            #zig-zag {
+
+                height:100%;
+                position:relative;
+                left:-1px;
+            }
+
+            #zigzag {
+
+                cursor:pointer;
+                padding-left:1px;
+                padding-right:20px;
+
+            }
+
+            #bell {
+
+                position:relative;
+                top:-5px;
+                left:3px;
+            }
+
+            #zigzag:hover {
+                border-bottom:4px #262626 solid;
+                height:92%;
+                cursor:pointer;
+            }
+
+            .styling {
+
+                padding:0 10px 0 10px;
+                
+            }
+
+            .text-positioning {
+
+                position:relative;
+                top:12px;
+            }
+
+            .stylings {
+
+                float:left;
+                height:100%;
+                
+            }
+
+            #news:hover {
+
+               border-bottom:4px #992211 solid;
+               cursor:pointer;
+            }
+
+            #sport:hover {
+
+                border-bottom:4px #FFEE11 solid;
+                cursor:pointer;
+            }
+
+            #weather:hover {
+
+                border-bottom:4px #88CCEE solid;
+                cursor:pointer;
+            }
+
+            #iplayer:hover {
+
+                border-bottom:4px #ED3D7D solid;
+                cursor:pointer;
+            }
+
+            #tv:hover {
+
+                border-bottom:4px #262626 solid;
+                cursor:pointer;
+            }
+
+            #radio:hover {
+
+                border-bottom:4px #262626 solid;
+                cursor:pointer;
+            }
+
+            #more:hover {
+
+                border-bottom:4px #262626 solid;
+                cursor:pointer;
+            }
+
+            #more {
+
+                padding-right:30px;
+                border-right:1px #B2B2B2 solid; 
+            }
+
+            .hover-height:hover {
+
+                height:92%;
+            }
+
+            #search {
+
+                margin-top:10px;
+                padding:4px;
+                background-color:#E4E4E4;
+                border:none;
+                position:relative;
+                z-index:1;
+                left:5px;
+                top:-1px;
+
+
+            }
+
+            #search-box {
+
+                padding:0 0 0 10px;
+            }
+
+            #search-pic {
+
+                position:relative;
+                top:7px;
+                cursor:pointer;
+                z-index:0;
+                height:60%;
+            }
+
+            #second-section {
+
+                height:55px;
+                background-color:#BB1919;
+                padding:0 180px 0 180px;
+                
+                margin:0 auto;
+            }
+
+            #news-logo {
+                
+                padding:0;
+                color:#FBFFFF;
+                font-size:45px;
+                padding-top:3px;
+                float:left;
+                text-decoration:none;
+            }
+
+            #find-now {
+
+                padding:5px 10px;
+                float:right;
+                border:1px #BB4545 solid;
+                font-size:20px;
+                padding-right:40px;
+                position:relative;
+                top:-12px;
+                color:#FBFFFF;
+                
+            }
+
+            #find-now:hover {
+
+                cursor:pointer;
+                text-decoration:underline;
+                text-decoration-thickness: 1px;
+            }
+
+            #third-section {
+
+                height:35px;
+                margin:0;
+                background-color:#A91717;
+                padding:0;
+                position:relative;
+                left:-10px;
+            }
+
+            #menu-list {
+
+                margin:0;
+                list-style:none;
+                float:left;
+                padding:0;
+            }
+
+            .menu-list-item {
+
+                float:left;
+                /* padding:0 10px; */
+                margin:0;
+                border-right:1px #BB4545 solid;
+                position:relative;
+                top:-10px;
+                
+            }
+
+            .menu-list-item a {
+
+                color:#FAFFDA;
+                font-size:15px;
+                text-decoration:none;
+                width:100%;
+                padding:8px 10px;
+                
+            }
+
+            .menu-list-item a:hover {
+
+                border-bottom:3px #FFFFFF solid;
+                padding-bottom:5px;
+            }
+
+            #home-menu {
+
+                padding-left:0;
+            }
+
+            #more-menu {
+
+                border-right:none;
+            }
+
+            #more-menu a:hover {
+
+                border:none;
+                background-color:#000000
+            }
+
+            .contain {
+
+                position:relative;
+                top:-20px;
+                /* background-color: blue; */
+            }
+
+            main h1 {
+
+                padding-top:5px;
+                font-weight:normal;
+                padding-bottom:2px;
+                border-bottom:3px #BB1919 solid;
+                font-size:20px;
+                width:100px;
+            }
+
+            main h2 {
+
+                font-size:30px;
+                
+            }
+
+            main h2 a {
+                
+                text-decoration: none;
+                color:black;
+
+            }
+
+            main h2 a:hover {
+
+                color:#1167A8;
+            }
+
+            #section-1 {
+
+                margin-right:10px;
+                padding-bottom:0px;
+                /* background-color:yellow; */
+                border-bottom:1px red solid;
+                width:650px;
+            }
+           
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div id="first-section">
+
+                <div class="container">
+
+                    <div id="bbc-logo">
+
+                        <a href=""><img src="bbc_logo.png"></a>
+
+                    </div>
+
+                    <div id="signin" class="left-border">
+
+                        <img src="login.PNG" id="login-logo">
+                        <a href="" class="format-link" id="signin-text">Sign in</a>
+                    </div>
+
+                    <div id="zigzag" class="stylings">
+                        <img src="zig-zag.PNG" id="zig-zag">
+                        <a href=""><img src="bell.png" id="bell"></a>
+                    </div>
+
+                    <div id="news" class="left-border stylings styling hover-height">
+
+                        <a href="" class="format-link text-positioning">News</a>
+                    </div>
+
+                    <div id="sport" class="left-border stylings hover-height">
+
+                        <a href="" class="format-link styling text-positioning">Sport</a>
+                    </div>
+
+                    <div id="weather" class="left-border stylings hover-height">
+
+                        <a href="" class="format-link styling text-positioning">Weather</a>
+                    </div>
+
+                    <div id="iplayer" class="left-border stylings hover-height">
+
+                        <a href="" class="format-link styling text-positioning">iPlayer</a>
+                    </div>
+
+                    <div id="tv" class="left-border stylings hover-height">
+
+                        <a href="" class="format-link styling text-positioning">TV</a>
+                    </div>
+
+                    <div id="radio" class="left-border stylings hover-height">
+
+                        <a href="" class="format-link styling text-positioning">Radio</a>
+                    </div>
+
+                    <div id="more" class="left-border stylings hover-height">
+
+                        <a href="" class="format-link styling text-positioning">More</a>
+                    </div>
+
+                    <div id="search-box" class="stylings ">
+
+                        <input type="text" placeholder="Search" id="search">
+                        <img src="search.png" id="search-pic">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="second-section">
+
+                <div class="container">
+
+                    <a href="" id="news-logo">NEWS</a>
+
+                    <p id="find-now" class>Find local news</p>
+                    
+
+                </div>
+                
+
+            </div>
+
+            <div id="third-section">
+
+                <div class="container">
+
+                    <ul id="menu-list">
+
+                        <li id="home-menu" class="menu-list-item"><a href="">Home</a></li>
+                        <li class="menu-list-item"><a href="">UK</a></li>
+                        <li class="menu-list-item"><a href="">World</a></li>
+                        <li class="menu-list-item"><a href="">Business</a></li>
+                        <li class="menu-list-item"><a href="">Politics</a></li>
+                        <li class="menu-list-item"><a href="">Tech</a></li>
+                        <li class="menu-list-item"><a href="">Science</a></li>
+                        <li class="menu-list-item"><a href="">Health</a></li>
+                        <li class="menu-list-item"><a href="">Education</a></li>
+                        <li class="menu-list-item"><a href="">Entertainment & Arts</a></li>
+                        <li class="menu-list-item"><a href="">Video & Audio</a></li>
+                        <li class="menu-list-item" id="more-menu">
+                            <a>More
+                                <img src="arrow.png">
+                            </a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <div class="clear"></div>
+        <div class="container contain">
+
+            <main id="main-section">
+
+                <section id="section-1">
+
+                    <h1>Technology</h1>
+                    <h2><a href="">Isu Omo John Launches JITH</a></h2>
+
+                </section>
+            </main>
+
+            <aside id="first-aside">
+
+
+            </aside>
+
+        </div>
+        
+
+
+    </body>
+</html>
+
+<!-- 33230000 kachi pass -->
